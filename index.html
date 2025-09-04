@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutrist | Login & Signup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Add this inside the <body> of index.html -->
+<form id="login-form" style="max-width:300px;margin:40px auto;">  
+  <!-- rishi -->
+  <h2>Login</h2>
+  <label>Username:</label>
+  <input type="text" id="username" required /><br /><br />
+  <label>Password:</label>
+  <input type="password" id="password" required /><br /><br />
+  <button type="submit">Login</button>
+</form>
+
+<script>
+  document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // You can add validation here if needed
+    window.location.href = 'hhh.html';
+  });
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

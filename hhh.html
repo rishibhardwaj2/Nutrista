@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutrist Dry Fruits</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Logo styling */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .logo img {
+      height: 50px;
+      width: auto;
+    }
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .logo-text .brand {
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .logo-text .tagline {
+      font-size: 0.75em;
+      color: #fff3c4;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <!-- ...existing code... -->
+<nav>
+  <div class="logo">
+    <img src="Flux_Dev_a_stunning_illustration_of_Design_a_modern_and_vibran_1.jpg" alt="Nutrist Logo" />
+    <div class="logo-text">
+      <span class="brand">Nutrist</span>
+      <span class="tagline">heach dry fruin</span>
+    </div>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="hhh.html">Products</a></li>
+    <li class="cart" title="View Cart">
+      🛒 Cart <span class="cart-count" id="cart-count">0</span>
+    </li>
+  </ul>
+</nav>
+<!-- ...existing code... -->
+
+  <main>
+    <h2>Our Dry Fruit Collection</h2>
+    <div class="dryfruit-list" id="product-list">
+      <div class="dryfruit-item">
+        <img src="https://i.imgur.com/JKRM1KW.png" alt="Almonds" />
+        <div class="dryfruit-name">Almonds (Badam)</div>
+        <div class="dryfruit-desc">Rich in Vitamin E and antioxidants, great for skin and heart health.</div>
+        <div class="btn-group">
+          <button onclick="addToCart('Almonds')">Add to Cart</button>
+          <button onclick="buyNow('Almonds')">Buy Now</button>
+        </div>
+      </div>
+      <div class="dryfruit-item">
+        <img src="https://i.imgur.com/j7XN17g.png" alt="Cashews" />
+        <div class="dryfruit-name">Cashews (Kaju)</div>
+        <div class="dryfruit-desc">Creamy and nutritious, perfect for energy and brain health.</div>
+        <div class="btn-group">
+          <button onclick="addToCart('Cashews')">Add to Cart</button>
+          <button onclick="buyNow('Cashews')">Buy Now</button>
+        </div>
+      </div>
+      <div class="dryfruit-item">
+        <img src="https://i.imgur.com/MhIX44I.png" alt="Walnuts" />
+        <div class="dryfruit-name">Walnuts (Akhrot)</div>
+        <div class="dryfruit-desc">Loaded with omega-3 fatty acids, great for heart and brain function.</div>
+        <div class="btn-group">
+          <button onclick="addToCart('Walnuts')">Add to Cart</button>
+          <button onclick="buyNow('Walnuts')">Buy Now</button>
+        </div>
+      </div>
+      <div class="dryfruit-item">
+        <img src="https://i.imgur.com/FMTZZb0.png" alt="Pistachios" />
+        <div class="dryfruit-name">Pistachios (Pista)</div>
+        <div class="dryfruit-desc">Tasty and rich in protein, perfect for weight management.</div>
+        <div class="btn-group">
+          <button onclick="addToCart('Pistachios')">Add to Cart</button>
+          <button onclick="buyNow('Pistachios')">Buy Now</button>
+        </div>
+      </div>
+      <div class="dryfruit-item">
+        <img src="https://i.imgur.com/rDvoP9W.png" alt="Raisins" />
+        <div class="dryfruit-name">Raisins (Kishmish)</div>
+        <div class="dryfruit-desc">Natural sweetener and rich in iron, great for energy and digestion.</div>
+        <div class="btn-group">
+          <button onclick="addToCart('Raisins')">Add to Cart</button>
+          <button onclick="buyNow('Raisins')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Nutrist. All Rights Reserved.
+  </footer>
+
+  <script>
+    let cartCount = 0;
+
+    function addToCart(productName) {
+      cartCount++;
+      document.getElementById('cart-count').textContent = cartCount;
+      alert(productName + ' added to cart!');
+    }
+
+    function buyNow(productName) {
+      alert('Proceeding to buy ' + productName + '!');
+      // Here you can redirect to checkout or payment page
+    }
+  </script>
+</body>
+</html>
